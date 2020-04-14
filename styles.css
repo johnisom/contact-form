@@ -1,0 +1,131 @@
+main {
+    font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 60%;
+}
+
+fieldset {
+    border: 3px double #bbb;
+    border-radius: 4px;
+    margin: 0;
+    padding-top: 0;
+}
+
+fieldset legend {
+    font-size: 1.2em;
+    margin-left: 20%;
+}
+
+dt label {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+dl {
+    margin: 0;
+}
+
+.partial {
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.one-half {
+    width: 50%;
+}
+
+.one-fifth {
+    width: 20%;
+}
+
+.two-fifths {
+    width: 40%;
+}
+
+.right {
+    padding-left: 5px;
+}
+
+.middle {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.left {
+    padding-right: 5px;
+}
+
+dd {
+    margin: 0;
+}
+
+dd input,
+dd select {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+}
+
+dd select {
+    background-color: #fff;
+}
+
+dd select:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjEycHgiIHk9IjVweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgMTAgNSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAgNSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSIwLDAgMTAsMCA1LDUiLz48L3N2Zz4=");
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    padding-right: 16px;
+}
+
+dd select#web-tech {
+    padding: 4px auto;
+    height: 100px;
+}
+
+option[disabled] {
+    display: none;
+}
+
+textarea {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font: inherit;
+    margin-bottom: 10px;
+    resize: none;
+    padding: 5px;
+    white-space: pre-wrap;
+    width: 100%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font: inherit;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+    background-color: #bbb;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Contact Form</title>
+  </head>
+
+  <body>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Contact us!</legend>
+        <dl class="partial one-half left">
+          <dt>
+            <label for="first-name">First Name</label>
+          </dt>
+          <dd>
+            <input type="text" id="first-name" name="first_name" required>
+          </dd>
+        </dl><dl class="partial one-half right">
+          <dt>
+            <label for="last-name">Last Name</label>
+          </dt>
+          <dd>
+            <input type="text" id="last-name" name="last_name" required>
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            <label for="email">Email Address</label>
+          </dt>
+          <dd>
+            <input type="email" id="email" name="email"
+                   placeholder="Ex. jsmith@example.com" required>
+          </dd>
+        </dl>
+        <dl class="partial two-fifths left">
+          <dt>
+            <label for="city">City</label>
+          </dt>
+          <dd>
+            <input type="text" id="city" name="city" required>
+          </dd>
+        </dl><dl class="partial two-fifths middle">
+          <dt>
+            <label for="state">State</label>
+          </dt>
+          <dd>
+            <select id="state" name="state" required>
+              <option selected disabled value>Choose a State</option>
+              <option value="AL">Alabama (AL)</option>
+              <option value="AK">Alaska (AK)</option>
+              <option value="AZ">Arizona (AZ)</option>
+              <option value="AR">Arkansas (AR)</option>
+              <option value="CA">California (CA)</option>
+              <option value="CO">Colorado (CO)</option>
+              <option value="CT">Connecticut (CT)</option>
+              <option value="DE">Delaware (DE)</option>
+              <option value="DC">District Of Columbia (DC)</option>
+              <option value="FL">Florida (FL)</option>
+              <option value="GA">Georgia (GA)</option>
+              <option value="HI">Hawaii (HI)</option>
+              <option value="ID">Idaho (ID)</option>
+              <option value="IL">Illinois (IL)</option>
+              <option value="IN">Indiana (IN)</option>
+              <option value="IA">Iowa (IA)</option>
+              <option value="KS">Kansas (KS)</option>
+              <option value="KY">Kentucky (KY)</option>
+              <option value="LA">Louisiana (LA)</option>
+              <option value="ME">Maine (ME)</option>
+              <option value="MD">Maryland (MD)</option>
+              <option value="MA">Massachusetts (MA)</option>
+              <option value="MI">Michigan (MI)</option>
+              <option value="MN">Minnesota (MN)</option>
+              <option value="MS">Mississippi (MS)</option>
+              <option value="MO">Missouri (MO)</option>
+              <option value="MT">Montana (MT)</option>
+              <option value="NE">Nebraska (NE)</option>
+              <option value="NV">Nevada (NV)</option>
+              <option value="NH">New Hampshire (NH)</option>
+              <option value="NJ">New Jersey (NJ)</option>
+              <option value="NM">New Mexico (NM)</option>
+              <option value="NY">New York (NY)</option>
+              <option value="NC">North Carolina (NC)</option>
+              <option value="ND">North Dakota (ND)</option>
+              <option value="OH">Ohio (OH)</option>
+              <option value="OK">Oklahoma (OK)</option>
+              <option value="OR">Oregon (OR)</option>
+              <option value="PA">Pennsylvania (PA)</option>
+              <option value="RI">Rhode Island (RI)</option>
+              <option value="SC">South Carolina (SC)</option>
+              <option value="SD">South Dakota (SD)</option>
+              <option value="TN">Tennessee (TN)</option>
+              <option value="TX">Texas (TX)</option>
+              <option value="UT">Utah (UT)</option>
+              <option value="VT">Vermont (VT)</option>
+              <option value="VA">Virginia (VA)</option>
+              <option value="WA">Washington (WA)</option>
+              <option value="WV">West Virginia (WV)</option>
+              <option value="WI">Wisconsin (WI)</option>
+              <option value="WY">Wyoming (WY)</option>
+            </select>
+          </dd>
+        </dl><dl class="partial one-fifth right">
+          <dt>
+            <label for="zip">Zip code</label>
+          </dt>
+          <dd>
+            <input type="text" id="zip" name="zip" pattern="[0-9]{5}"
+                   placeholder="Ex. 12345">
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            <label for="color">Which of these colors do you like best?</label>
+          </dt>
+          <dd>
+            <select id="color" name="color">
+              <option value="red" selected>Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="cyan">Cyan</option>
+              <option value="magenta">Magenta</option>
+              <option value="yellow">Yellow</option>
+              <option value="black">Black</option>
+              <option value="white">White</option>
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            <label for="web-tech">
+              Which web technologies do you want to learn?
+            </label>
+          </dt>
+          <dd>
+            <select id="web-tech" name="web_technology" multiple>
+              <optgroup label="HTML/CSS">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+              </optgroup>
+              <optgroup label="JavaScript">
+                <option value="javascript">JavaScript</option>
+                <option value="node">Node.js</option>
+                <option value="express">Express</option>
+              </optgroup>
+              <optgroup label="Ruby">
+                <option value="ruby">Ruby</option>
+                <option value="rails">Rails</option>
+                <option value="sinatra">Sinatra</option>
+              </optgroup>
+              <optgroup label="Python">
+                <option value="python">Python</option>
+                <option value="django">Django</option>
+                <option value="flask">Flask</option>
+              </optgroup>
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            <label for="comment">Comment</label>
+          </dt>
+          <dd>
+            <textarea id="comment" name="comment" rows="6" cols="80"
+                      placeholder="Write down your comment here..."></textarea>
+          </dd>
+        </dl>
+
+        <input type="hidden" name="timestamp" value="2020-01-06">
+
+        <div class="partial one-half left">
+          <input type="submit" value="Send">
+        </div><div class="partial one-half right">
+          <input type="reset" value="Reset Form">
+        </div>
+      </fieldset>
+
+    </form>
+  </body>
+
+</html>
